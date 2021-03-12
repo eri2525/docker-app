@@ -48,6 +48,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'pry-byebug'
+  gem 'annotate', '2.4.1.beta1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

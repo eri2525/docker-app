@@ -38,6 +38,7 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    annotate (2.4.1.beta1)
     arel (7.1.4)
     autoprefixer-rails (10.2.4.0)
       execjs
@@ -188,6 +189,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate (= 2.4.1.beta1)
   bootstrap (~> 4.0.0)
   byebug
   coffee-rails (~> 4.2)
