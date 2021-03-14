@@ -23,6 +23,7 @@ before_action :set_target_board, only: %i[show edit update destroy]
   end
 
   def show
+    @comment = Comment.new(board_id: @board.id)
   end
 
   def edit
