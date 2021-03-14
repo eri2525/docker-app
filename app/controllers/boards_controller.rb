@@ -30,9 +30,14 @@ before_action :set_target_board, only: %i[show edit update destroy]
   end
 
   def update
-    @board.update(board_params)
-    
-    redirect_to @board
+    if @board.update(board_params)
+      redirect_to @board
+    else
+        redirect_to :back, flash: {
+        board: @board,
+        error_messages: @board.errors.full_messages
+        }
+      end
   end
 
   def destroy
